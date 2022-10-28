@@ -9,28 +9,28 @@
         <div class="form-group">
           <label for="NameTextField">Title</label>
           <input type="text" class="form-control" id="NameTextField" placeholder="Book Name" name="title"
-            value="<%= books.Title %>" required>
+            value="<%= books.title %>" required>
         </div>
         <!--Add Description-->
         <div class="form-group">
-          <label for="DescriptionTextField">Description</label>
-          <input type="text" class="form-control" id="DescriptionTextField" placeholder="Book Description"
-            name="Description" value="<%= books.Description %>" required>
+          <label for="NameTextField">Description</label>
+          <input type="text" class="form-control" id="NameTextField" placeholder="Book Description" name="Description"
+            value="<%= books.description %>" required>
         </div>
         <div class="form-group">
           <label for="PriceTextField">Price</label>
           <input type="text" class="form-control" id="PriceTextField" placeholder="Book Price" name="price"
-            value="<%= books.Price %>" required>
+            value="<%= books.price %>" required>
         </div>
         <div class="form-group">
           <label for="AuthorTextField">Author</label>
           <input type="text" class="form-control" id="AuthorTextField" placeholder="Book Author" name="author"
-            value="<%= books.Author %>" required>
+            value="<%= books.author %>" required>
         </div>
         <div class="form-group">
           <label for="GenreTextField">Genre</label>
           <input type="text" class="form-control" id="GenreTextField" placeholder="Book Genre" name="genre"
-            value="<%= books.Genre %>" required>
+            value="<%= books.genre %>" required>
         </div>
 
         <% if (title == "Edit") {%>

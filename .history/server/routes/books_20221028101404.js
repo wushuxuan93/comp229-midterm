@@ -14,7 +14,11 @@ router.get('/', (req, res, next) => {
       return console.error(err);
     }
     else {
-      res.render('books/index', { title: 'Books', page: 'index',books: books});
+      res.render('books/index', {
+        title: 'Books',
+        page: 'index',
+        books: books
+      });
     }
   });
 
@@ -68,7 +72,7 @@ router.get('/edit/:id', (req, res, next) => {
             res.end(err);
         }
         else {
-            res.render('../views/books/details', { title: "Edit Book", page:'details', books: bookToEdit });
+            res.render('books/details', { title: "Edit Book", book: bookToEdit });
         }
     });
 });

@@ -14,7 +14,11 @@ router.get('/', (req, res, next) => {
       return console.error(err);
     }
     else {
-      res.render('books/index', { title: 'Books', page: 'index',books: books});
+      res.render('books/index', {
+        title: 'Books',
+        page: 'index',
+        books: books
+      });
     }
   });
 
