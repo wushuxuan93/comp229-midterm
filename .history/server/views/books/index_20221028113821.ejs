@@ -29,6 +29,8 @@
             <!-- ADD DESCRIPTION ROW-->
             <% for (let count = 0; count < books.length; count++) { %>
             <tr>
+              <% for (let count = 0; count < books.length; count++) { %>
+            <tr>
               <td><%= books[count].Title %></td>
               <td class="text-center"><%= books[count].Description %></td>
               <td class="text-center">$<%= books[count].Price %></td>
